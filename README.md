@@ -1,5 +1,6 @@
 # pipress
 
+```
 apt-get update
 apt-get upgrade
 apt-get install -y mariadb-client apache2 php php-mysql mariadb-server 
@@ -22,6 +23,8 @@ CREATE USER 'wordpressuser'@'localhost' IDENTIFIED BY 'test';
 GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpressuser'@'localhost' IDENTIFIED BY 'test';
 FLUSH PRIVILEGES;
 exit
+
+```
 
 ----
 
