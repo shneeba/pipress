@@ -32,7 +32,7 @@ exit
 define('FS_METHOD', 'direct');
 
 -----
-
+```
 cd && wget https://dl.eff.org/certbot-auto
 chmod a+x certbot-auto
 cd && ./certbot-auto certonly
@@ -40,9 +40,9 @@ cd && ./certbot-auto renew --dry-run
 crontab -e
 0 0 * * * cd && ./certbot-auto renew --quiet --no-self-upgrade
 0 12 * * * cd && ./certbot-auto renew --quiet --no-self-upgrade
-
+```
 ----
-
+```
 a2enmod ssl
 
 # Add to /etc/apache2/sites-available/000-default.conf
@@ -76,4 +76,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
-
+```
